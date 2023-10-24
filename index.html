@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED KLN</title>
+
+    <!-- Bootstrap 5.3.1  -->
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="Resources/libraries/bootstrap-5.3.1/css/bootstrap.min.css">
+
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="Resources/libraries/fontawesome-6.4.2/css/all.css">
+
+    <!-- custom CSS  -->
+    <link rel="stylesheet" href="Resources/css/indexStyle.css">
+
+    <!-- AOS CSS  -->
+    <link rel="stylesheet" href="Resources/libraries/aos-master/aos-master/dist/aos.css">
+
+
+</head>
+
+<body style="overflow-x: hidden;">
+    <!-- main container Start  -->
+    <div class="container-fluid p-0 ">
+
+        <!-- Nav Bar Start -->
+        <nav class="navbar navbar-expand-lg sticky-top" style="background: rgb(223,214,165);
+        background: linear-gradient(90deg, rgba(223,214,165,1) 0%, rgba(224,209,220,1) 100%);">
+
+            <div class="container">
+                <!-- navbrand Start  -->
+                <a class="navbar-brand" href="#">
+                    <img src="Resources/images/logo.png" alt="Logo" class="d-inline-block align-text-top logo-image">
+                </a>
+                <!-- navbrand End  -->
+
+                <!-- navbar mobile toggler Start -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                    style="border: none;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- navbar mobile toggler END -->
+
+                <div class="offcanvas offcanvas-start fw-semibold fs-6 navTheme" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img src="Resources/images/logo.png" alt="Logo" class="d-inline-block align-text-top">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column ">
+                        <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i
+                                        class="fa-solid fa-circle fa-xs" style="color: #3fa338;"></i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-hover" href="#">Our Programmes</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link nav-hover" href="#">News and Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-hover" href="#">Magazine</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-hover" href="#">Blog</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Bar END  -->
+
+        <!-- Carousel Area Start-->
+        <div class="container-fluid p-0">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <!-- Carousel indicator Start  -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <!-- Carousel indicator End  -->
+                <!-- carousel items Start  -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active c-item">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="d-block w-100 c-image"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block pb-5">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                            <a href="#" class="btn btn-primary fw-semibold">View</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="d-block w-100 c-image"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block pb-5">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                            <a href="#" class="btn btn-primary fw-semibold">View</a>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="d-block w-100 c-image"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block pb-5">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                            <a href="#" class="btn btn-primary fw-semibold">View</a>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- carousel items END  -->
+
+                <!-- Previous and next buttons Start  -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <!-- Previous and next buttons End  -->
+            </div>
+        </div>
+        <!-- Carousel Area End  -->
+
+        <!-- About LED KLN Start -->
+        <div class="container pt-md-4 pt-lg-4 pt-0">
+            <div class="row">
+                <div class="col-md-6 text-center col-sm-8  pt-5 " data-aos="zoom-out-right" data-aos-duration="850">
+                    <h2>About LED KLN</h2>
+                    <p class="lh-base">
+                        We lead, empower, and develop all young enthusiasts who believe that they can be their best and
+                        most
+                        passionate selves by working determinedly to achieve success.
+
+                        Let's grow yourself as a unique undergraduate with expectations of the corporate world with LED
+                        KLN
+                        !!!
+                    </p>
+                </div>
+                <div class="col-md-6" data-aos="zoom-out-left" data-aos-duration="850">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" alt="" srcset="" width="100%"
+                        height="100%">
+                </div>
+            </div>
+
+        </div>
+        <!-- About LED KLN End  -->
+
+        <!-- Vision and Mission Start  -->
+        <div class="container" data-aos="fade-up"
+            data-aos-duration="850">
+            <div class="row p-4">
+                <!-- <div class="col-md-6">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" alt="" srcset="" width="100%"
+                        height="100%">
+                </div> -->
+                <div class="col-md-12 col-sm-12 text-center lh-lg shadow visionMission pt-3">
+                    <h2>Our Vision</h2>
+                    <p>
+                        Empowered youth striving for excellence
+                    </p>
+                    <hr>
+                    <h2>Our Mission</h2>
+                    <p>
+                        Transform undergraduates into professionals
+                    </p>
+                    <hr>
+                    <h2>Our Core Values</h2>
+                    <p class="fw-semibold">
+                        <i class="fa-solid fa-arrow-right fa-xs"></i> STEP <br>
+                        <i class="fa-solid fa-arrow-right fa-xs"></i> LEAD <br>
+                        <i class="fa-solid fa-arrow-right fa-xs"></i> STAR <br>
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <!-- Vision and Mission End  -->
+
+
+        <!-- Avenues Start  -->
+        <div class="container pt-3 pt-md-4">
+
+            <div class="row">
+                <!-- main header Start -->
+                <div class="col-md-12 col-sm-12">
+                    <h1 class="text-center" data-aos="zoom-in-up">Avenues of LED KLN</h1>
+                </div>
+                <!-- main header End -->
+            </div>
+            <div class="row pt-4">
+                <!-- Card Start  -->
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="10" data-aos-offset="250">
+                    <div class="card h-100 shadow card-hover avenueCard">
+                        <img src="Resources/images/avenues images/businessDev.png" class="card-img-top p-4" alt="...">
+                        <div class="card-body">
+                            <hr>
+                            <h5 class="card-title  text-center">Business Development Avenue</h5>
+                            <hr>
+                            <p class="card-text p-3">Business Development Avenue was established to offer valuable
+                                opportunities for LED KLN members to develop their personalities and make contacts in
+                                the corporate industry.
+                                <br><br>
+                                Through this avenue, members can,
+                                <span class="fw-medium">
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Interact with industry
+                                    professionals.
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Increase knowledge of the
+                                    corporate world.
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Form significant partnerships
+                                    with industry professionals to host events.
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Learn how to communicate
+                                    professionally.
+                                </span>
+
+                            </p>
+                            <div class="text-center align-text-bottom">
+                                <a href="#" class="btn btn-primary fw-semibold button-hover">Explore more..</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card End  -->
+
+                <!-- Card Start  -->
+                <div class="col-md-3 pt-4 pt-md-0 pt-lg-0" data-aos="fade-up" data-aos-duration="10"
+                    data-aos-offset="250" data-aos-delay="100">
+                    <div class="card h-100 shadow card-hover avenueCard">
+                        <img src="Resources/images/avenues images/brandingAndMarketing.png" class="card-img-top p-4" alt="...">
+                        <div class="card-body">
+                            <hr>
+                            <h5 class="card-title  text-center">Branding and Marketing Avenue</h5>
+                            <hr>
+                            <p class="card-text p-3">Branding and Marketing Avenue was established to raise awareness of
+                                LED
+                                KLN events and memorable moments. This avenue reaches our audience through different
+                                social media platforms.
+                                <br><br>
+                                Through this avenue, members can,
+                                <span class="fw-medium">
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Develop their design skills from
+                                    the ground up.
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Learn about various marketing
+                                    talents.
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Learn new strategies for
+                                    designing and marketing.
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Learn about content creation.
+                                </span>
+
+                            </p>
+                            <div
+                                class="position-absolute bottom-0 start-50 translate-middle-x text-center pb-0 m-2 m-md-0 m-lg-0 pb-md-3 pd-lg-3">
+                                <a href="#" class="btn btn-primary ">Explore more..</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card End  -->
+
+                <!-- Card Start  -->
+                <div class="col-md-3  pt-4 pt-md-0 pt-lg-0" data-aos="fade-up" data-aos-duration="10"
+                    data-aos-offset="250" data-aos-delay="200">
+                    <div class="card h-100 shadow card-hover avenueCard">
+                        <img src="Resources/images/avenues images/HR.png" class="card-img-top p-4" alt="...">
+                        <div class="card-body">
+                            <hr>
+                            <h5 class="card-title  text-center">Human Resources Avenue</h5>
+                            <hr>
+                            <p class="card-text p-3 ">Human Resource Avenue was established to give members experience
+                                in
+                                member management. This avenue opens up a new space for LED KLN members who are keen on
+                                human resource management
+                                <br><br>
+                                Through this avenue, members can,
+                                <span class="fw-medium">
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Be familiar with member
+                                    management processes.
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Assist with the recruiting
+                                    process within the club.
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Improve inter-personal and
+                                    communication skills.
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Learn how to make decisions and
+                                    solve problems.
+                                </span>
+
+                            </p>
+                            <div
+                                class="position-absolute bottom-0 start-50 translate-middle-x text-center pb-0 m-2 m-md-0 m-lg-0 pb-md-3 pd-lg-3 ">
+                                <a href="#" class="btn btn-primary ">Explore more..</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card End  -->
+
+                <!-- Card Start  -->
+                <div class="col-md-3  pt-4 pt-md-0 pt-lg-0" data-aos="fade-up" data-aos-duration="10"
+                    data-aos-offset="250" data-aos-delay="300">
+                    <div class="card h-100 shadow card-hover avenueCard">
+                        <img src="Resources/images/avenues images/organizationalDev.png" class="card-img-top p-4" alt="...">
+                        <div class="card-body ">
+                            <hr>
+                            <h5 class="card-title text-center">Organizational Development Avenue</h5>
+                            <hr>
+                            <p class="card-text p-3">Organizational Development Avenue was created to help members learn
+                                about organizing events and track their progress in the club. The events are planned and
+                                outlined to the LED KLN members through this avenue
+                                <br><br>
+                                Through this avenue, members can,
+                                <span class="fw-medium">
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Coordinate with the other
+                                    avenues.
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Assist in carrying out the plans
+                                    and objectives of the club.
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Work in a collaborative way with
+                                    other avenues.
+                                    <br>
+                                    <i class="fa-solid fa-arrow-right-long fa-xs"></i> Learn effective ways of managing
+                                    tasks.
+                                </span>
+
+                            </p>
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x text-center pb-3">
+                                <a href="#" class="btn btn-primary ">Explore more..</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card End  -->
+
+            </div>
+        </div>
+        <!-- Avanues End  -->
+
+        <!-- Pathway to the present Start  -->
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" alt="" srcset="" width="100%"
+                        height="100%">
+                </div>
+                <div class="col-md-6 text-center lh-base pt-4 pt-md-0 pt-lg-0">
+                    <div data-aos="fade-left">
+                        <h2>LED KLN Concepts</h2>
+                        <p>
+                            Values of leadership, empowerment, and development of undergraduates
+
+                        </p>
+                    </div>
+
+                    <hr>
+                    <div data-aos="fade-right">
+                        <h2>Our Foundation</h2>
+                        <p>
+                            A club that facilitates the upliftment of soft skills, personal development, and
+                            professional
+                            development while guiding undergraduates to explore their passionate career paths.
+                        </p>
+                    </div>
+
+                    <hr>
+                    <div data-aos="fade-left">
+                        <h2>Our pathway to the present</h2>
+                        <p>
+                            LED KLN has been able to build a member base of over 1000 undergraduates since its inception
+                            by
+                            becoming a platform that provides industrial-level experience for undergraduates internally.
+                        </p>
+                    </div>
+
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <!-- Pathway to the present End  -->
+
+        <!-- Leaders Start  -->
+        <div class="container pt-3 pt-md-5 pt-lg-5 leaders">
+            <div class="row">
+                <div class="col-md-3 d-flex align-items-center" data-aos="fade-in" data-aos-duration="900"
+                    data-aos-offset="400">
+                    <h1>
+                        Our Leaders
+                    </h1>
+                </div>
+                <div class="col-md-9" data-aos="zoom-in" data-aos-duration="900">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" alt="" srcset="" width="100%"
+                        height="100%" class="">
+                </div>
+            </div>
+        </div>
+        <!-- Leaders End  -->
+
+        <!-- Messages Section Start  -->
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 data-aos="zoom-in-up">Our Structure</h1>
+                </div>
+            </div>
+            <div class="row pt-3">
+
+                <!-- card Start  -->
+                <div class="col-md-4 offset-md-2 " data-aos="zoom-in-up" data-aos-duration="20">
+                    <div class="card h-100 shadow card-hover messageCard">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="card-img-top  p-4" alt="...">
+
+                        <div class="card-body p-4 pt-0">
+                            <div class="card-title">
+                                <h5>Message from Senior Treasurer</h5>
+                            </div>
+                            <p class="card-text lh-base">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <br>LED KLN provides an opportunity to develop students giving the meaning
+                                of Leadership-Empowerment-Development. It further supports to develop creativity that
+                                leads to mould young personnel in order to achieve their own success and betterment of
+                                society.<i class="fa-solid fa-quote-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end  -->
+
+                <!-- card Start  -->
+                <div class="col-md-4 pt-4 pt-md-0 pt-lg-0" data-aos="zoom-in-up" data-aos-duration="20">
+                    <div class="card h-100 shadow card-hover messageCard">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="card-img-top p-4" alt="...">
+
+                        <div class="card-body p-4 pt-0">
+                            <div class="card-title">
+                                <h5>Message from Senior Treasurer</h5>
+                            </div>
+                            <p class="card-text lh-base">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <br> Seven years ago, a visionary group of students founded LED KLN to
+                                bridge the gap between undergraduates and the corporate world. With their intelligence,
+                                dedication, and compassionate souls, the members of LED KLN are shining examples of what
+                                it means to be a leader. It is both heartening and inspiring to witness their unwavering
+                                commitment to making a difference in the world. May LED KLN continue to flourish and
+                                stand strong for what it represents and what it has yet to become.
+                                <i class="fa-solid fa-quote-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end  -->
+
+            </div>
+        </div>
+        <!-- Messages Section END  -->
+
+        <!-- Footer Start  -->
+        <div class="container-fluid mt-4 p-4" style="background: rgb(223,214,165);
+        background: linear-gradient(90deg, rgba(223,214,165,0.7) 0%, rgba(224,209,220,0.7) 100%);">
+            <div class="row">
+
+                <!-- social media start  -->
+                <div class="col-md-4 text-center">
+                    <h5>Useful Links</h5>
+                    <hr>
+                    <div class="d-flex flex-row justify-content-around pt-2">
+
+                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></div>
+                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></div>
+                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-tiktok fa-2xl"></i></a></div>
+                        <div class="p-1 socialLinks"><a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a></div>
+                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a></div>
+                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a></div>
+                        <div class="p-1 socialLinks"><a href="#"><i
+                                    class="fa-brands fa-square-x-twitter fa-2xl"></i></a></div>
+                    </div>
+
+                </div>
+                <!-- social media end  -->
+
+                <!-- contact us Start  -->
+                <div class="col-md-4 pt-4 pt-md-0 pt-lg-0">
+                    <h5>Contact Us</h5>
+                    <hr>
+                    <!-- <i class="fa-solid fa-user-plus"></i> -->
+                    <h6><i class="fa-solid fa-location-dot"></i> Address:</h6>
+                    <p>
+                        University of Kelaniya, <br>
+                        Kandy Road, Dalugama,<br>
+                        Kelaniya,11600,<br>
+                        Sri Lanka.
+                    </p>
+
+                    <h6><i class="fa-solid fa-phone"></i> Phone:</h6>
+                    <p>
+                        <i class="fa-regular fa-circle-dot fa-2xs"></i> Hansi (Secretory) - +94 77 129 2711 <br>
+                        <i class="fa-regular fa-circle-dot fa-2xs"></i> Ishara (HR Director) +94 77 183 3696 <br>
+                        <i class="fa-regular fa-circle-dot fa-2xs"></i> Dewduni (HR Manager) +94 77 447 5759 <br>
+                    </p>
+                </div>
+                <!-- contact us End  -->
+
+                <!-- About us Start  -->
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <hr>
+                    <p>
+                        Non-profit organization and the initiative of a group of undergraduates studying in various
+                        fields,
+                        including Science, information technology, management, and social sciences at the University of
+                        Kelaniya.
+                    </p>
+                </div>
+                <!-- About us End  -->
+            </div>
+
+        </div>
+        <!-- Footer END  -->
+
+        <!-- Copyright text Start -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 fw-bold bg-primary text-center text-light">
+                    Copyrights © 2023 Achinthya Dulshan
+                </div>
+            </div>
+        </div>
+        <!-- Copyright text End -->
+
+    </div>
+    <!-- main container End  -->
+</body>
+
+
+<!-- Bootstrap JS  -->
+<script src="Resources/libraries/bootstrap-5.3.1/js/bootstrap.js"></script>
+
+
+<!-- AOS JS  -->
+<script src="Resources/libraries/aos-master/aos-master/dist/aos.js"></script>
+
+<!-- Initialize AOS Animations  -->
+<script>
+    AOS.init();
+</script>
+
+</html>
