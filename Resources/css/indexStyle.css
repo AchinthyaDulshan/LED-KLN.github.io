@@ -53,7 +53,7 @@ body {
 }
 
 .messageCard {
-    border-radius: 1em;
+    border-radius: 1.5em;
 }
 
 .avenueCard {
@@ -67,7 +67,7 @@ body {
 
 .socialLinks:hover,
 .socialLinks:focus {
-    transform: scale(1.2);
+    transform: scale(120%);
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
 
@@ -89,7 +89,7 @@ body {
 }
 
 .visionMission {
-    border-radius: 1em;
+    border-radius: 2em;
     background: rgb(223, 214, 165);
     background: linear-gradient(90deg, rgba(223, 214, 165, 1) 0%, rgba(224, 209, 220, 1) 100%);
 
