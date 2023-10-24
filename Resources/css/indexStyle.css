@@ -5,6 +5,12 @@
     /* IE 10 and IE 11 */
     user-select: none;
     /* Standard syntax */
+
+}
+
+body {
+    overflow-x: hidden;
+    /* padding-right: 0px !important; */
 }
 
 .card-hover:hover,
@@ -47,7 +53,7 @@
 }
 
 .messageCard {
-    border-radius: 1.5em;
+    border-radius: 1em;
 }
 
 .avenueCard {
@@ -61,7 +67,7 @@
 
 .socialLinks:hover,
 .socialLinks:focus {
-    transform: scale(120%);
+    transform: scale(1.2);
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
 
@@ -83,7 +89,7 @@
 }
 
 .visionMission {
-    border-radius: 2em;
+    border-radius: 1em;
     background: rgb(223, 214, 165);
     background: linear-gradient(90deg, rgba(223, 214, 165, 1) 0%, rgba(224, 209, 220, 1) 100%);
 
@@ -91,25 +97,19 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
+    .c-item {
+        height: 55vh;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
+@media only screen and (min-width: 1200px) {}
