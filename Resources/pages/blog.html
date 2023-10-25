@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED KLN</title>
+
+    <!-- Bootstrap 5.3.1  -->
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="../libraries/bootstrap-5.3.1/css/bootstrap.min.css">
+
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="../libraries/fontawesome-6.4.2/css/all.css">
+
+    <!-- AOS CSS  -->
+    <link rel="stylesheet" href="../libraries/aos-master/aos-master/dist/aos.css">
+
+    <!-- custom css  -->
+    <!-- index CSS  -->
+    <link rel="stylesheet" href="../css/indexStyle.css">
+
+    <!-- Our Programmes css  -->
+    <link rel="stylesheet" href="../css/ourProgrammes.css">
+
+    <!-- Blog css  -->
+    <link rel="stylesheet" href="../css/blog.css">
+
+</head>
+
+<body>
+    <!-- main container Start  -->
+    <div class="container-fluid p-0 ">
+
+
+        <!-- Nav Bar Start -->
+        <nav class="navbar navbar-expand-lg sticky-top" style="background: rgb(223,214,165);
+        background: linear-gradient(90deg, rgba(223,214,165,1) 0%, rgba(224,209,220,1) 100%);">
+
+            <div class="container">
+                <!-- navbrand Start  -->
+                <a class="navbar-brand" href="#">
+                    <img src="../images/logo.png" alt="Logo" class="d-inline-block align-text-top logo-image">
+                </a>
+                <!-- navbrand End  -->
+
+                <!-- navbar mobile toggler Start -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                    style="border: none;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- navbar mobile toggler END -->
+
+                <div class="offcanvas offcanvas-lg offcanvas-start fw-semibold fs-6 navTheme" tabindex="-1"
+                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img src="../images/logo.png" alt="Logo" class="d-inline-block align-text-top">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column ">
+                        <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link nav-hover" aria-current="page" href="/index.html"> Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-hover" href="#">Our Programmes </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link nav-hover" href="#">News and Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-hover" href="#">Magazine</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" style="border-bottom: 0.15em solid transparent;">
+                                    Blog <span class="align-top"><i class="fa-solid fa-circle fa-2xs"
+                                            style="color: #3fa338;"></i></span></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Bar END  -->
+
+        <div class="container mt-3">
+            <div class="row">
+
+                <!-- Previous blog cards list start -->
+                <div class="col-md-4 overflow-auto order-last order-md-first previousBlogsList">
+                    <!-- previous text header  -->
+                    <h3 class="fw-medium my-4 mt-md-4 text-center text-md-start d-none d-md-block">Previous</h3>
+
+                    <div class="row ">
+
+                        <div class="col-md-12">
+                            <!-- card start  -->
+                            <div class="card shadow">
+                                <div class="row ">
+                                    <div class="col-4 col-md-4 pe-0">
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-8 col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with .. </p>
+                                            <a href="#" class="stretched-link"></a>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card end  -->
+                        </div>
+                    </div>
+
+                    <div class="row pt-2">
+                        <div class="col-md-12">
+
+                            <!-- card start  -->
+                            <div class="card shadow">
+                                <div class="row">
+                                    <div class="col-4 col-md-4 pe-0">
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                            alt="...">
+                                    </div>
+                                    <div class=" col-8 col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with .. </p>
+                                            <a href="#" class="stretched-link"></a>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card end  -->
+                        </div>
+                    </div>
+
+                    <div class="row pt-2">
+                        <div class="col-md-12">
+
+                            <!-- card start  -->
+                            <div class="card shadow">
+                                <div class="row">
+                                    <div class="col-4 col-md-4 pe-0">
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-8 col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with .. </p>
+                                            <a href="#" class="stretched-link"></a>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card end  -->
+                        </div>
+                    </div>
+
+                    <div class="row pt-2">
+                        <div class="col-md-12">
+
+                            <!-- card start  -->
+                            <div class="card shadow" data-aos="fade-up">
+                                <div class="row">
+                                    <div class="col-4 col-md-4 pe-0">
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-8 col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with ..
+                                            </p>
+                                            <a href="#" class="stretched-link"></a>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card end  -->
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-md-12">
+
+                            <!-- card start  -->
+                            <div class="card shadow">
+                                <div class="row">
+                                    <div class="col-4 col-md-4 pe-0">
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-8 col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with ..
+                                            </p>
+                                            <a href="#" class="stretched-link"></a>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card end  -->
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-md-12">
+
+                            <!-- card start  -->
+                            <div class="card shadow">
+                                <div class="row">
+                                    <div class="col-4 col-md-4 pe-0">
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-8 col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with ..
+                                            </p>
+                                            <a href="#" class="stretched-link"></a>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card end  -->
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-md-12">
+
+                            <!-- card start  -->
+                            <div class="card shadow">
+                                <div class="row">
+                                    <div class="col-4 col-md-4 pe-0">
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-8 col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with ..
+                                            </p>
+                                            <a href="#" class="stretched-link"></a>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card end  -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Previous blog cards list end -->
+
+                <!-- Latest Blog card section start  -->
+                <div class="col-md-8 order-first order-md-last">
+
+                    <!-- Latest header text  -->
+                    <h1 class="text-center text-md-start">Latest</h1>
+
+                    <div class="position-sticky">
+
+                        <!-- latest blog card start  -->
+                        <div class="card shadow text-bg-dark border border-0 latestBlogCard mb-2 m-md-0 shadow-lg">
+                            <img src="https://picsum.photos/200" class="card-img latestBlogCardImage" alt="...">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center">
+                                <h5 class="card-title display-5">Card title</h5>
+                                <p class="card-text lead">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+
+                                <!-- link blog page here -->
+                                <a href="#" class="stretched-link"></a>
+
+                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- latest blog card end  -->
+
+                    </div>
+
+                </div>
+                <!-- Latest Blog card section end  -->
+                <div class="row d-block d-md-none">
+                    <div class="col">
+                    <h3 class="fw-medium my-4 mt-md-4 text-center text-md-start">Previous</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer Start  -->
+        <div class="container-fluid mt-4 p-4" style="background: rgb(223,214,165);
+        background: linear-gradient(90deg, rgba(223,214,165,0.7) 0%, rgba(224,209,220,0.7) 100%);">
+            <div class="row">
+
+                <!-- social media start  -->
+                <div class="col-md-4 text-center text-md-start">
+                    <h5>Useful Links</h5>
+                    <hr>
+                    <div class="d-flex flex-row justify-content-around pt-2">
+
+                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></div>
+                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></div>
+                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-tiktok fa-2xl"></i></a></div>
+                        <div class="p-1 socialLinks"><a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a></div>
+                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a></div>
+                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a></div>
+                        <div class="p-1 socialLinks"><a href="#"><i
+                                    class="fa-brands fa-square-x-twitter fa-2xl"></i></a></div>
+                    </div>
+
+                </div>
+                <!-- social media end  -->
+
+                <!-- contact us Start  -->
+                <div class="col-md-4 pt-4 pt-md-0 pt-lg-0 text-center text-md-start">
+                    <h5>Contact Us</h5>
+                    <hr>
+                    <!-- <i class="fa-solid fa-user-plus"></i> -->
+                    <h6><i class="fa-solid fa-location-dot"></i> Address:</h6>
+                    <p>
+                        University of Kelaniya, <br>
+                        Kandy Road, Dalugama,<br>
+                        Kelaniya,11600,<br>
+                        Sri Lanka.
+                    </p>
+
+                    <h6><i class="fa-solid fa-phone"></i> Phone:</h6>
+
+                    <p>
+                        <i class="fa-regular fa-circle-dot fa-2xs"></i> Hansi (Secretory) - +94 77 129 2711 <br>
+                        <i class="fa-regular fa-circle-dot fa-2xs"></i> Ishara (HR Director) +94 77 183 3696 <br>
+                        <i class="fa-regular fa-circle-dot fa-2xs"></i> Dewduni (HR Manager) +94 77 447 5759 <br>
+                    </p>
+
+                </div>
+                <!-- contact us End  -->
+
+                <!-- About us Start  -->
+                <div class="col-md-4 text-center text-md-start">
+                    <h5>About Us</h5>
+                    <hr>
+                    <p>
+                        Non-profit organization and the initiative of a group of undergraduates studying in various
+                        fields,
+                        including Science, information technology, management, and social sciences at the University of
+                        Kelaniya.
+                    </p>
+                </div>
+                <!-- About us End  -->
+            </div>
+
+        </div>
+        <!-- Footer END  -->
+
+        <!-- Copyright text Start -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 fw-medium bg-dark text-center text-light">
+                    Copyrights © 2023 Achinthya Dulshan
+                </div>
+            </div>
+        </div>
+        <!-- Copyright text End -->
+
+    </div>
+    <!-- main container End  -->
+</body>
+
+
+<!-- Bootstrap JS  -->
+<script src="../libraries/bootstrap-5.3.1/js/bootstrap.js"></script>
+
+<!-- AOS JS  -->
+<script src="../libraries/aos-master/aos-master/dist/aos.js"></script>
+
+<!-- Initialize AOS Animations  -->
+<script>
+    AOS.init();
+</script>
+
+</html>
