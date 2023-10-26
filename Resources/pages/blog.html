@@ -17,11 +17,8 @@
     <link rel="stylesheet" href="../libraries/aos-master/aos-master/dist/aos.css">
 
     <!-- custom css  -->
-    <!-- index CSS  -->
-    <link rel="stylesheet" href="../css/indexStyle.css">
-
-    <!-- Our Programmes css  -->
-    <link rel="stylesheet" href="../css/ourProgrammes.css">
+    <!-- common css  -->
+    <link rel="stylesheet" href="../css/common.css">
 
     <!-- Blog css  -->
     <link rel="stylesheet" href="../css/blog.css">
@@ -30,12 +27,11 @@
 
 <body>
     <!-- Nav Bar Start -->
-    <nav class="navbar navbar-expand-lg sticky-top" style="background: rgb(223,214,165);
-        background: linear-gradient(90deg, rgba(223,214,165,1) 0%, rgba(224,209,220,1) 100%);">
+    <nav class="navbar navbar-expand-lg sticky-top navTheme shadow">
 
         <div class="container">
             <!-- navbrand Start  -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="../images/logo.png" alt="Logo" class="d-inline-block align-text-top logo-image">
             </a>
             <!-- navbrand End  -->
@@ -47,7 +43,7 @@
             </button>
             <!-- navbar mobile toggler END -->
 
-            <div class="offcanvas offcanvas-lg offcanvas-start fw-semibold fs-6 navTheme" tabindex="-1"
+            <div class="offcanvas offcanvas-lg offcanvas-start fw-semibold fs-6 navOffcanvsTheme" tabindex="-1"
                 id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <img src="../images/logo.png" alt="Logo" class="d-inline-block align-text-top">
@@ -56,16 +52,16 @@
                 <div class="offcanvas-body d-flex flex-column ">
                     <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 gap-3">
                         <li class="nav-item">
-                            <a class="nav-link nav-hover" aria-current="page" href="/index.html"> Home </a>
+                            <a class="nav-link nav-hover" aria-current="page" href="/"> Home </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-hover" href="ourProgrammes.html">Our Programmes </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link nav-hover" href="#">News and Features</a>
+                            <a class="nav-link nav-hover" href="newsAndFeatures.html">News and Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-hover" href="#">Magazine</a>
+                            <a class="nav-link nav-hover" href="magazine.html">Magazine</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#" style="border-bottom: 0.15em solid transparent;">
@@ -79,6 +75,19 @@
         </div>
     </nav>
     <!-- Nav Bar END  -->
+
+    <!-- alert message UNDER MAINTENANCE start -->
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col ">
+                <div class="alert alert-warning text-center" role="alert">
+                    <i class="fa-solid fa-triangle-exclamation"></i> This site under maintenance 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- alert message UNDER MAINTENANCE end -->
+
     <!-- main container Start  -->
     <div class="container-fluid">
 
@@ -86,7 +95,7 @@
             <div class="row">
 
                 <!-- Recent blog cards list start -->
-                <div class="col-md-4 overflow-auto order-last order-md-first recentBlogsList py-3 py-md-0">
+                <div class="col-md-4 overflow-auto order-last order-md-first recentBlogsList py-3 py-md-0 pb-md-2" data-aos="zoom-in" data-aos-duration="10">
                     <!-- Recent text header  -->
                     <h3 class="fw-medium my-4 mt-md-4 text-center text-md-start d-none d-md-block">Recent</h3>
                     <hr class=" d-none d-md-block">
@@ -94,10 +103,10 @@
 
                         <div class="col-md-12">
                             <!-- card start  -->
-                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
+                            <div class="card shadow rounded-3">
                                 <div class="row ">
                                     <div class="col-4 col-md-4 pe-0">
-                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start-3 h-100"
                                             alt="...">
                                     </div>
                                     <div class="col-8 col-md-8">
@@ -119,10 +128,10 @@
                         <div class="col-md-12">
 
                             <!-- card start  -->
-                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
+                            <div class="card shadow rounded-3">
                                 <div class="row">
                                     <div class="col-4 col-md-4 pe-0">
-                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start-3 h-100"
                                             alt="...">
                                     </div>
                                     <div class=" col-8 col-md-8">
@@ -144,10 +153,10 @@
                         <div class="col-md-12">
 
                             <!-- card start  -->
-                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
+                            <div class="card shadow rounded-3">
                                 <div class="row">
                                     <div class="col-4 col-md-4 pe-0">
-                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start-3 h-100"
                                             alt="...">
                                     </div>
                                     <div class="col-8 col-md-8">
@@ -169,10 +178,10 @@
                         <div class="col-md-12">
 
                             <!-- card start  -->
-                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
+                            <div class="card shadow rounded-3">
                                 <div class="row">
                                     <div class="col-4 col-md-4 pe-0">
-                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start-3 h-100"
                                             alt="...">
                                     </div>
                                     <div class="col-8 col-md-8">
@@ -194,10 +203,10 @@
                         <div class="col-md-12">
 
                             <!-- card start  -->
-                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
+                            <div class="card shadow rounded-3">
                                 <div class="row">
                                     <div class="col-4 col-md-4 pe-0">
-                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start-3 h-100"
                                             alt="...">
                                     </div>
                                     <div class="col-8 col-md-8">
@@ -219,10 +228,10 @@
                         <div class="col-md-12">
 
                             <!-- card start  -->
-                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
+                            <div class="card shadow rounded-3">
                                 <div class="row">
                                     <div class="col-4 col-md-4 pe-0">
-                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start-3 h-100"
                                             alt="...">
                                     </div>
                                     <div class="col-8 col-md-8">
@@ -244,10 +253,10 @@
                         <div class="col-md-12">
 
                             <!-- card start  -->
-                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
+                            <div class="card shadow rounded-3">
                                 <div class="row">
                                     <div class="col-4 col-md-4 pe-0">
-                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
+                                        <img src="https://picsum.photos/200" class="img-fluid rounded-start-3 h-100"
                                             alt="...">
                                     </div>
                                     <div class="col-8 col-md-8">
@@ -274,9 +283,11 @@
                     <!-- Latest header text  -->
                     <h1 class="text-center text-md-start py-2">Latest</h1>
                     <hr>
-                    <div class="position-sticky">
+                    <div class="position-sticky" data-aos="zoom-in" data-aos-duration="5">
 
+                        <!-- latest blogs carousel start  -->
                         <div id="carouselExampleCaptions" class="carousel slide shadow" data-bs-ride="carousel">
+
                             <!-- Carousel indicator Start  -->
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -287,12 +298,16 @@
                                     aria-label="Slide 3"></button>
                             </div>
                             <!-- Carousel indicator End  -->
+
                             <!-- carousel items Start  -->
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div
-                                        class="card shadow text-bg-dark border border-0 latestBlogCard mb-2 m-md-0 shadow-lg">
-                                        <img src="https://picsum.photos/200" class="card-img latestBlogCardImage"
+
+                                <!-- Item 1 start  -->
+                                <div class="carousel-item active c-item">
+
+                                    <!-- Blog card Start  -->
+                                    <div class="card shadow text-bg-dark border border-0 latestBlogCard mb-2 m-md-0 shadow-lg rounded-4" >
+                                        <img src="https://picsum.photos/200" class="card-img latestBlogCardImage rounded-4"
                                             alt="...">
                                         <div
                                             class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center carousel-caption">
@@ -308,11 +323,42 @@
                                             <p class="card-text"><small>Last updated 3 mins ago</small></p>
                                         </div>
                                     </div>
+                                    <!-- Blog card end  -->
+
                                 </div>
-                                <div class="carousel-item">
-                                    <div
-                                        class="card shadow text-bg-dark border border-0 latestBlogCard mb-2 m-md-0 shadow-lg">
-                                        <img src="https://picsum.photos/200" class="card-img latestBlogCardImage"
+                                <!-- Item 1 End  -->
+
+                                <!-- Item 2 Start  -->
+                                <div class="carousel-item c-item">
+
+                                    <!-- Blog card Start  -->
+                                    <div class="card shadow text-bg-dark border border-0 latestBlogCard mb-2 m-md-0 shadow-lg rounded-4">
+                                        <img src="https://picsum.photos/200" class="card-img latestBlogCardImage rounded-4"
+                                            alt="...">
+                                        <div
+                                            class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center carousel-caption rounded">
+                                            <h5 class="card-title display-5">Card title</h5>
+                                            <p class="card-text lead">This is a wider card with supporting text below as
+                                                a natural
+                                                lead-in to
+                                                additional content. This content is a little bit longer.</p>
+
+                                            <!-- link blog page here -->
+                                            <a href="#" class="stretched-link"></a>
+
+                                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                    <!-- Blog card End  -->
+                                </div>
+                                <!-- Item 2 End  -->
+
+                                <!-- Item 3 Start  -->
+                                <div class="carousel-item c-item">
+
+                                    <!-- Blog card Start  -->
+                                    <div class="card shadow text-bg-dark border border-0 latestBlogCard mb-2 m-md-0 shadow-lg rounded-4">
+                                        <img src="https://picsum.photos/200" class="card-img latestBlogCardImage rounded-4"
                                             alt="...">
                                         <div
                                             class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center carousel-caption">
@@ -328,27 +374,11 @@
                                             <p class="card-text"><small>Last updated 3 mins ago</small></p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div
-                                        class="card shadow text-bg-dark border border-0 latestBlogCard mb-2 m-md-0 shadow-lg">
-                                        <img src="https://picsum.photos/200" class="card-img latestBlogCardImage"
-                                            alt="...">
-                                        <div
-                                            class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center carousel-caption">
-                                            <h5 class="card-title display-5">Card title</h5>
-                                            <p class="card-text lead">This is a wider card with supporting text below as
-                                                a natural
-                                                lead-in to
-                                                additional content. This content is a little bit longer.</p>
+                                    <!-- Blog card end  -->
 
-                                            <!-- link blog page here -->
-                                            <a href="#" class="stretched-link"></a>
-
-                                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
                                 </div>
+                                <!-- Item 3 End  -->
+
                             </div>
                             <!-- carousel items END  -->
 
@@ -365,29 +395,14 @@
                             </button>
                             <!-- Previous and next buttons End  -->
                         </div>
-                        <!-- latest blog card start  -->
-                        <div
-                            class="card shadow text-bg-dark border border-0 latestBlogCard mb-2 m-md-0 shadow-lg d-none">
-                            <img src="https://picsum.photos/200" class="card-img latestBlogCardImage" alt="...">
-                            <div
-                                class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center">
-                                <h5 class="card-title display-5">Card title</h5>
-                                <p class="card-text lead">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This content is a little bit longer.</p>
-
-                                <!-- link blog page here -->
-                                <a href="#" class="stretched-link"></a>
-
-                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <!-- latest blog card end  -->
+                        <!-- latest blogs carousel end  -->
 
                     </div>
 
                 </div>
                 <!-- Latest Blog card section end  -->
+
+                <!-- Recent blog list header on mobile devices Start  -->
                 <div class="row d-block d-md-none">
                     <div class="col">
                         <hr>
@@ -395,6 +410,7 @@
                         <hr>
                     </div>
                 </div>
+                <!-- Recent blog list header on mobile devices end -->
             </div>
         </div>
 
@@ -402,12 +418,11 @@
     <!-- main container End  -->
 
     <!-- Footer Start  -->
-    <div class="container-fluid mt-4 p-4" style="background: rgb(223,214,165);
-    background: linear-gradient(90deg, rgba(223,214,165,0.7) 0%, rgba(224,209,220,0.7) 100%);">
+    <div class="container-fluid mt-4 p-4 footerTheme">
         <div class="row">
 
             <!-- social media start  -->
-            <div class="col-md-4 text-center text-md-start">
+            <div class="col-md-4 text-center text-md-start" data-aos="fade-up" data-aos-duration="3" data-aos-offset="250">
                 <h5>Useful Links</h5>
                 <hr>
                 <div class="d-flex flex-row justify-content-around pt-2">
@@ -426,7 +441,7 @@
             <!-- social media end  -->
 
             <!-- contact us Start  -->
-            <div class="col-md-4 pt-4 pt-md-0 pt-lg-0 text-center text-md-start">
+            <div class="col-md-4 pt-4 pt-md-0 pt-lg-0 text-center text-md-start" data-aos="fade-up" data-aos-duration="3" data-aos-delay="300" data-aos-offset="150">
                 <h5>Contact Us</h5>
                 <hr>
                 <!-- <i class="fa-solid fa-user-plus"></i> -->
@@ -450,7 +465,7 @@
             <!-- contact us End  -->
 
             <!-- About us Start  -->
-            <div class="col-md-4 text-center text-md-start">
+            <div class="col-md-4 text-center text-md-start" data-aos="fade-up" data-aos-duration="3" data-aos-delay="500" data-aos-offset="50">
                 <h5>About Us</h5>
                 <hr>
                 <p>

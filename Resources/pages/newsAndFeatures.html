@@ -17,23 +17,22 @@
     <link rel="stylesheet" href="../libraries/aos-master/aos-master/dist/aos.css">
 
     <!-- custom css  -->
-    <!-- index CSS  -->
-    <link rel="stylesheet" href="../css/indexStyle.css">
+    <!-- common css  -->
+    <link rel="stylesheet" href="../css/common.css">
 
-    <!-- Our Programmes css  -->
-    <link rel="stylesheet" href="../css/ourProgrammes.css">
+    <!-- news and features css  -->
+    <link rel="stylesheet" href="../css/newsAndFeatures.css">
 
 </head>
 
 <body>
 
     <!-- Nav Bar Start -->
-    <nav class="navbar navbar-expand-lg sticky-top" style="background: rgb(223,214,165);
-    background: linear-gradient(90deg, rgba(223,214,165,1) 0%, rgba(224,209,220,1) 100%);">
+    <nav class="navbar navbar-expand-lg sticky-top navTheme shadow">
 
         <div class="container">
             <!-- navbrand Start  -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="../images/logo.png" alt="Logo" class="d-inline-block align-text-top logo-image">
             </a>
             <!-- navbrand End  -->
@@ -45,7 +44,7 @@
             </button>
             <!-- navbar mobile toggler END -->
 
-            <div class="offcanvas offcanvas-lg offcanvas-start fw-semibold fs-6 navTheme" tabindex="-1"
+            <div class="offcanvas offcanvas-lg offcanvas-start fw-semibold fs-6 navOffcanvsTheme" tabindex="-1"
                 id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <img src="../images/logo.png" alt="Logo" class="d-inline-block align-text-top">
@@ -54,20 +53,20 @@
                 <div class="offcanvas-body d-flex flex-column ">
                     <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 gap-3">
                         <li class="nav-item">
-                            <a class="nav-link nav-hover" aria-current="page" href="/index.html">
+                            <a class="nav-link nav-hover" aria-current="page" href="/">
 
                                 Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active " href="#" style="border-bottom: 0.15em solid transparent;">Our
-                                Programmes <span class="align-top"><i class="fa-solid fa-circle fa-2xs"
-                                        style="color: #3fa338;"></i></span></a>
+                            <a class="nav-link nav-hover" href="ourProgrammes.html" >Our
+                                Programmes </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link nav-hover" href="#">News and Features</a>
+                            <a class="nav-link active" href="#" style="border-bottom: 0.15em solid transparent;">News and Features <span class="align-top"><i class="fa-solid fa-circle fa-2xs"
+                                style="color: #3fa338;"></i></span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-hover" href="#">Magazine</a>
+                            <a class="nav-link nav-hover" href="magazine.html">Magazine</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-hover" href="blog.html">Blog</a>
@@ -80,15 +79,28 @@
     </nav>
     <!-- Nav Bar END  -->
 
+    <!-- alert message UNDER MAINTENANCE start -->
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col ">
+                <div class="alert alert-warning text-center" role="alert">
+                    <i class="fa-solid fa-triangle-exclamation"></i> This site under maintenance 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- alert message UNDER MAINTENANCE end -->
+
     <!-- main container Start  -->
     <div class="container-fluid">
 
         <!-- hero section start  -->
-        <div class="container bg-body-tertiary my-3 rounded-4 hero shadow">
+        <div class="container bg-body-tertiary my-3 rounded-4 hero shadow" data-aos="zoom-in-up" data-aos-duration="10">
             <div class="row">
-                <div class="col col-md-4 text-center p-4 p-md-5">
-                    <h1 class="display-5 text-md-start">Our <span class="text-warning">Programmes</span></h1>
-                    <p class="lead fs-6">
+                <div class="col col-md-7 text-center p-4 p-md-5 d-md-flex align-items-center justify-content-between gap-3">
+                    <h1 class="display-6 fw-medium text-md-start">News <span class="text-warning">and</span> Features</h1>
+                    <div class="vr d-none d-md-block"></div>
+                    <p class="lead fs-5">
                         We lead and empower you, to develop yourself as a unique undergraduate with expectations of the
                         corporate world. Let's grow together!!!
                     </p>
@@ -102,12 +114,11 @@
     <!-- main container End  -->
 
     <!-- Footer Start  -->
-    <div class="container-fluid mt-4 p-4" style="background: rgb(223,214,165);
-    background: linear-gradient(90deg, rgba(223,214,165,0.7) 0%, rgba(224,209,220,0.7) 100%);">
+    <div class="container-fluid mt-4 p-4 footerTheme">
         <div class="row">
 
             <!-- social media start  -->
-            <div class="col-md-4 text-center text-md-start">
+            <div class="col-md-4 text-center text-md-start" data-aos="fade-up" data-aos-duration="3" data-aos-offset="250">
                 <h5>Useful Links</h5>
                 <hr>
                 <div class="d-flex flex-row justify-content-around pt-2">
@@ -126,7 +137,7 @@
             <!-- social media end  -->
 
             <!-- contact us Start  -->
-            <div class="col-md-4 pt-4 pt-md-0 pt-lg-0 text-center text-md-start">
+            <div class="col-md-4 pt-4 pt-md-0 pt-lg-0 text-center text-md-start" data-aos="fade-up" data-aos-duration="3" data-aos-delay="300" data-aos-offset="150">
                 <h5>Contact Us</h5>
                 <hr>
                 <!-- <i class="fa-solid fa-user-plus"></i> -->
@@ -150,7 +161,7 @@
             <!-- contact us End  -->
 
             <!-- About us Start  -->
-            <div class="col-md-4 text-center text-md-start">
+            <div class="col-md-4 text-center text-md-start" data-aos="fade-up" data-aos-duration="3" data-aos-delay="500" data-aos-offset="50">
                 <h5>About Us</h5>
                 <hr>
                 <p>

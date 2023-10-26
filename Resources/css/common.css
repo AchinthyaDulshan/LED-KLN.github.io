@@ -1,0 +1,26 @@
+
+/* nav bar color & effects  */
+/* offcanvas navbar  */
+.navOffcanvsTheme {
+    background: rgb(223, 214, 165);
+    background: linear-gradient(90deg, rgba(223, 214, 165, 0.4) 0%, rgba(224, 209, 220, 0.4) 100%);
+    backdrop-filter: blur(8px);
+}
+
+/* md navbar  */
+.navTheme{
+    background: rgb(223,214,165);
+    background: linear-gradient(90deg, rgba(223,214,165,1) 0%, rgba(224,209,220,1) 100%);
+}
+
+/* nav logo  */
+.logo-image {
+    height: 30px;
+    object-fit: cover;
+}
+
+/* footer styles  */
+.footerTheme{
+    background: rgb(223,214,165);
+    background: linear-gradient(90deg, rgba(223,214,165,0.7) 0%, rgba(224,209,220,0.7) 100%);
+}

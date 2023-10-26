@@ -1,0 +1,8 @@
+.hero{
+    background: url(https://picsum.photos/200);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: fixed;
+    object-fit: cover;
+}

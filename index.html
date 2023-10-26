@@ -12,74 +12,84 @@
 
     <!-- fontawesome  -->
     <link rel="stylesheet" href="Resources/libraries/fontawesome-6.4.2/css/all.css">
-
-    <!-- custom CSS  -->
-    <link rel="stylesheet" href="Resources/css/indexStyle.css">
-
+   
     <!-- AOS CSS  -->
     <link rel="stylesheet" href="Resources/libraries/aos-master/aos-master/dist/aos.css">
 
+    <!-- custom CSS  -->
+    <!-- common css  -->
+    <link rel="stylesheet" href="Resources/css/common.css">
+
+    <!-- index CSS  -->
+    <link rel="stylesheet" href="Resources/css/indexStyle.css">
 
 </head>
 
-<body>
-    <!-- main container Start  -->
-    <div class="container-fluid p-0 ">
+<body><!-- Nav Bar Start -->
+    <nav class="navbar navbar-expand-lg sticky-top navTheme shadow">
 
-        
-        <!-- Nav Bar Start -->
-        <nav class="navbar navbar-expand-lg sticky-top" style="background: rgb(223,214,165);
-        background: linear-gradient(90deg, rgba(223,214,165,1) 0%, rgba(224,209,220,1) 100%);">
+        <div class="container">
+            <!-- navbrand Start  -->
+            <a class="navbar-brand" href="#">
+                <img src="Resources/images/logo.png" alt="Logo" class="d-inline-block align-text-top logo-image">
+            </a>
+            <!-- navbrand End  -->
 
-            <div class="container">
-                <!-- navbrand Start  -->
-                <a class="navbar-brand" href="#">
-                    <img src="Resources/images/logo.png" alt="Logo" class="d-inline-block align-text-top logo-image">
-                </a>
-                <!-- navbrand End  -->
+            <!-- navbar mobile toggler Start -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="border: none;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar mobile toggler END -->
 
-                <!-- navbar mobile toggler Start -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
-                    style="border: none;">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- navbar mobile toggler END -->
+            <div class="offcanvas offcanvas-lg offcanvas-start fw-semibold fs-6 navOffcanvsTheme" tabindex="-1"
+                id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 
-                <div class="offcanvas offcanvas-lg offcanvas-start fw-semibold fs-6 navTheme" tabindex="-1"
-                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <img src="Resources/images/logo.png" alt="Logo" class="d-inline-block align-text-top">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body d-flex flex-column ">
-                        <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 gap-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#" style="border-bottom: 0.15em solid transparent;">
-                                    
-                                        Home <span class="align-top"><i class="fa-solid fa-circle fa-2xs" style="color: #3fa338;"></i></span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-hover" href="Resources/pages/ourProgrammes.html">Our Programmes</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link nav-hover" href="#">News and Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-hover" href="#">Magazine</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-hover" href="Resources/pages/blog.html">Blog</a>
-                            </li>
-                        </ul>
+                <div class="offcanvas-header">
+                    <img src="Resources/images/logo.png" alt="Logo" class="d-inline-block align-text-top">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
 
-                    </div>
+                <div class="offcanvas-body d-flex flex-column ">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 gap-3">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"
+                                style="border-bottom: 0.15em solid transparent;">
+
+                                Home <span class="align-top"><i class="fa-solid fa-circle fa-2xs"
+                                        style="color: #3fa338;"></i></span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-hover" href="Resources/pages/ourProgrammes.html">Our Programmes</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link nav-hover" href="Resources/pages/newsAndFeatures.html">News and
+                                Features</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-hover" href="Resources/pages/magazine.html">Magazine</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-hover" href="Resources/pages/blog.html">Blog</a>
+                        </li>
+
+                    </ul>
+
                 </div>
             </div>
-        </nav>
-        <!-- Nav Bar END  -->
+        </div>
+    </nav>
+    <!-- Nav Bar END  -->
 
-        <!-- Carousel Area Start-->
+    <!-- main container Start  -->
+    <div class="container-fluid">
+
+      <!-- Carousel Area Start-->
         <div class="container-fluid pt-2">
 
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -96,7 +106,7 @@
                 <!-- carousel items Start  -->
                 <div class="carousel-inner">
                     <div class="carousel-item active c-item">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="d-block w-100 carousel-image"
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="d-block w-100 carousel-image rounded-4"
                             alt="...">
                         <div class="carousel-caption pb-5">
                             <h5>First slide label</h5>
@@ -105,7 +115,7 @@
                         </div>
                     </div>
                     <div class="carousel-item c-item">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="d-block w-100 carousel-image"
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="d-block w-100 carousel-image rounded-4"
                             alt="...">
                         <div class="carousel-caption pb-5">
                             <h5>Second slide label</h5>
@@ -115,7 +125,7 @@
                         </div>
                     </div>
                     <div class="carousel-item c-item">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="d-block w-100 carousel-image"
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="d-block w-100 carousel-image rounded-4"
                             alt="...">
                         <div class="carousel-caption pb-5">
                             <h5>Third slide label</h5>
@@ -213,7 +223,8 @@
                 <!-- Card Start  -->
                 <div class="col-md-3 " data-aos="fade-up" data-aos-duration="10" data-aos-offset="250">
                     <div class="card h-100 shadow  avenueCard">
-                        <img src="Resources/images/avenues images/businessDev.png" class="card-img-top img-fluid p-4" alt="...">
+                        <img src="Resources/images/avenues images/businessDev.png" class="card-img-top img-fluid p-4"
+                            alt="...">
                         <div class="card-body">
                             <hr>
                             <h5 class="card-title  text-center">Business Development Avenue</h5>
@@ -279,8 +290,7 @@
 
                             </p>
                             <!-- position-absolute bottom-0 start-50 translate-middle-x text-center pb-0 m-2 m-md-0 m-lg-0 pb-md-3 pd-lg-3 -->
-                            <div
-                                class="text-center pt-sm-4">
+                            <div class="text-center pt-sm-4">
                                 <a href="#" class="btn btn-primary  fw-semibold avenueCardBtn">Explore more..</a>
                             </div>
                         </div>
@@ -417,8 +427,8 @@
         <!-- Leaders Start  -->
         <div class="container pt-3 pt-md-5 leaders">
             <div class="row">
-                <div class="col-md-3 text-center d-md-flex align-items-center justify-content-center" data-aos="fade-in" data-aos-duration="900"
-                    data-aos-offset="400">
+                <div class="col-md-3 text-center d-md-flex align-items-center justify-content-center" data-aos="fade-in"
+                    data-aos-duration="900" data-aos-offset="400">
                     <h1>
                         Our Leaders
                     </h1>
@@ -441,7 +451,7 @@
             <div class="row pt-3">
 
                 <!-- card Start  -->
-                <div class="col-md-4 offset-md-2 " data-aos="zoom-in-up" data-aos-duration="20">
+                <div class="col-md-4 offset-md-2 " data-aos="zoom-in-up" data-aos-duration="20" data-aos-delay="200">
                     <div class="card h-100 shadow  messageCard">
                         <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="card-img-top  p-4" alt="...">
 
@@ -462,7 +472,7 @@
                 <!-- card end  -->
 
                 <!-- card Start  -->
-                <div class="col-md-4 pt-4 pt-md-0 pt-lg-0" data-aos="zoom-in-up" data-aos-duration="20">
+                <div class="col-md-4 pt-4 pt-md-0 pt-lg-0" data-aos="zoom-in-up" data-aos-duration="20" data-aos-delay="500">
                     <div class="card h-100 shadow  messageCard">
                         <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="card-img-top p-4" alt="...">
 
@@ -493,12 +503,11 @@
     <!-- main container End  -->
 
     <!-- Footer Start  -->
-    <div class="container-fluid mt-4 p-4" style="background: rgb(223,214,165);
-    background: linear-gradient(90deg, rgba(223,214,165,0.7) 0%, rgba(224,209,220,0.7) 100%);">
+    <div class="container-fluid mt-4 p-4 footerTheme">
         <div class="row">
 
             <!-- social media start  -->
-            <div class="col-md-4 text-center text-md-start">
+            <div class="col-md-4 text-center text-md-start" data-aos="fade-up" data-aos-duration="3" data-aos-offset="250">
                 <h5>Useful Links</h5>
                 <hr>
                 <div class="d-flex flex-row justify-content-around pt-2">
@@ -509,15 +518,15 @@
                     <div class="p-1 socialLinks"><a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a></div>
                     <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a></div>
                     <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a></div>
-                    <div class="p-1 socialLinks"><a href="#"><i
-                                class="fa-brands fa-square-x-twitter fa-2xl"></i></a></div>
+                    <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-square-x-twitter fa-2xl"></i></a>
+                    </div>
                 </div>
 
             </div>
             <!-- social media end  -->
 
             <!-- contact us Start  -->
-            <div class="col-md-4 pt-4 pt-md-0 pt-lg-0 text-center text-md-start">
+            <div class="col-md-4 pt-4 pt-md-0 pt-lg-0 text-center text-md-start" data-aos="fade-up" data-aos-duration="3" data-aos-delay="300" data-aos-offset="150">
                 <h5>Contact Us</h5>
                 <hr>
                 <!-- <i class="fa-solid fa-user-plus"></i> -->
@@ -530,18 +539,18 @@
                 </p>
 
                 <h6><i class="fa-solid fa-phone"></i> Phone:</h6>
-                
+
                 <p>
                     <i class="fa-regular fa-circle-dot fa-2xs"></i> Hansi (Secretory) - +94 77 129 2711 <br>
                     <i class="fa-regular fa-circle-dot fa-2xs"></i> Ishara (HR Director) +94 77 183 3696 <br>
                     <i class="fa-regular fa-circle-dot fa-2xs"></i> Dewduni (HR Manager) +94 77 447 5759 <br>
                 </p>
-            
+
             </div>
             <!-- contact us End  -->
 
             <!-- About us Start  -->
-            <div class="col-md-4 text-center text-md-start">
+            <div class="col-md-4 text-center text-md-start" data-aos="fade-up" data-aos-duration="3" data-aos-delay="500" data-aos-offset="50">
                 <h5>About Us</h5>
                 <hr>
                 <p>

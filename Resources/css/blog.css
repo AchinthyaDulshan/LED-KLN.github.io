@@ -1,6 +1,15 @@
 .latestBlogCard {
     height: 60vh;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
 }
+
+/* .latestBlogCard:hover,
+.latestBlogCard:focus{
+    transform: scale(103%);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+} */
 
 .latestBlogCardImage {
     height: 100%;
@@ -8,13 +17,13 @@
 }
 
 .recentBlogsList {
-    height: 60vh;
+    height: 73vh;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .latestBlogCard {
-        height: 50vh;
+        height: 45vh;
     }
 
     .recentBlogsList {

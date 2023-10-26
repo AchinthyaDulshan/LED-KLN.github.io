@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="../libraries/aos-master/aos-master/dist/aos.css">
 
     <!-- custom css  -->
-    <!-- index CSS  -->
-    <link rel="stylesheet" href="../css/indexStyle.css">
+    <!-- common css  -->
+    <link rel="stylesheet" href="../css/common.css">
 
-    <!-- Our Programmes css  -->
+    <!-- our Programmes css  -->
     <link rel="stylesheet" href="../css/ourProgrammes.css">
 
 </head>
@@ -28,12 +28,11 @@
 <body>
 
     <!-- Nav Bar Start -->
-    <nav class="navbar navbar-expand-lg sticky-top" style="background: rgb(223,214,165);
-    background: linear-gradient(90deg, rgba(223,214,165,1) 0%, rgba(224,209,220,1) 100%);">
+    <nav class="navbar navbar-expand-lg sticky-top navTheme shadow">
 
         <div class="container">
             <!-- navbrand Start  -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="../images/logo.png" alt="Logo" class="d-inline-block align-text-top logo-image">
             </a>
             <!-- navbrand End  -->
@@ -45,7 +44,7 @@
             </button>
             <!-- navbar mobile toggler END -->
 
-            <div class="offcanvas offcanvas-lg offcanvas-start fw-semibold fs-6 navTheme" tabindex="-1"
+            <div class="offcanvas offcanvas-lg offcanvas-start fw-semibold fs-6 navOffcanvsTheme" tabindex="-1"
                 id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <img src="../images/logo.png" alt="Logo" class="d-inline-block align-text-top">
@@ -54,7 +53,7 @@
                 <div class="offcanvas-body d-flex flex-column ">
                     <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 gap-3">
                         <li class="nav-item">
-                            <a class="nav-link nav-hover" aria-current="page" href="/index.html">
+                            <a class="nav-link nav-hover" aria-current="page" href="/">
 
                                 Home </a>
                         </li>
@@ -64,10 +63,10 @@
                                         style="color: #3fa338;"></i></span></a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link nav-hover" href="#">News and Features</a>
+                            <a class="nav-link nav-hover" href="newsAndFeatures.html">News and Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-hover" href="#">Magazine</a>
+                            <a class="nav-link nav-hover" href="magazine.html">Magazine</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-hover" href="blog.html">Blog</a>
@@ -84,11 +83,12 @@
     <div class="container-fluid">
 
         <!-- hero section start  -->
-        <div class="container bg-body-tertiary my-3 rounded-4 hero shadow">
+        <div class="container bg-body-tertiary my-3 rounded-4 hero shadow" data-aos="zoom-in-up" data-aos-duration="10">
             <div class="row">
-                <div class="col col-md-4 text-center p-4 p-md-5">
-                    <h1 class="display-5 text-md-start">Our <span class="text-warning">Programmes</span></h1>
-                    <p class="lead fs-6">
+                <div class="col col-md-7 text-center p-4 p-md-5 d-md-flex align-items-center justify-content-between gap-3">
+                    <h1 class="display-5 fw-semibold text-md-start">Our <span class="text-warning">Programmes</span></h1>
+                    <div class="vr d-none d-md-block"></div>
+                    <p class="lead fs-5">
                         We lead and empower you, to develop yourself as a unique undergraduate with expectations of the
                         corporate world. Let's grow together!!!
                     </p>
@@ -100,9 +100,9 @@
         <!-- progrmme card container start  -->
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card shadow h-100 text-center">
-                        <img src="https://picsum.photos/200" class="card-img-top" alt="..." height="160px">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="10" data-aos-delay="0">
+                    <div class="card shadow h-100 text-center programmeCard" >
+                        <img src="https://picsum.photos/200" class="card-img-top programmeCardImage" alt="...">
                         <div class="card-body  pt-0">
                             <hr>
                             <h5 class="card-title">STEP Series</h5>
@@ -112,14 +112,14 @@
                                 development and elevate a career-oriented mindset to construct the necessary
                                 professional foundation</p>
                         </div>
-                        <div class="card-footer bg-white">
+                        <div class="card-footer">
                             <p class="card-text p-1"><small class="text-body-secondary">April 14, 2023</small></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 pt-3 pt-md-0">
-                    <div class="card shadow h-100 text-center ">
-                        <img src="https://picsum.photos/200" class="card-img-top" alt="..." height="160px">
+                <div class="col-md-3 pt-3 pt-md-0" data-aos="fade-up" data-aos-duration="10" data-aos-delay="100" data-aos-offset="250">
+                    <div class="card shadow h-100 text-center programmeCard ">
+                        <img src="https://picsum.photos/200" class="card-img-top programmeCardImage" alt="...">
                         <div class="card-body  pt-0">
                             <hr>
                             <h5 class="card-title">Ideathon</h5>
@@ -130,14 +130,14 @@
                                 scenarios.</p>
 
                         </div>
-                        <div class="card-footer bg-white">
+                        <div class="card-footer">
                             <p class="card-text"><small class="text-body-secondary">April 14, 2023</small></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 pt-3 pt-md-0">
-                    <div class="card shadow h-100 text-center">
-                        <img src="https://picsum.photos/200" class="card-img-top" alt="..." height="160px">
+                <div class="col-md-3 pt-3 pt-md-0"  data-aos="fade-up" data-aos-duration="10" data-aos-delay="200" data-aos-offset="250">
+                    <div class="card shadow h-100 text-center programmeCard">
+                        <img src="https://picsum.photos/200" class="card-img-top programmeCardImage" alt="...">
                         <div class="card-body  pt-0">
                             <hr>
                             <h5 class="card-title">Business School</h5>
@@ -147,14 +147,14 @@
                                 their exciting career paths and provide a series of interviews with corporate
                                 organizations for a successful career.</p>
                         </div>
-                        <div class="card-footer bg-white">
+                        <div class="card-footer">
                             <p class="card-text"><small class="text-body-secondary">April 14, 2023</small></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 pt-3 pt-md-0">
-                    <div class="card shadow h-100 text-center">
-                        <img src="https://picsum.photos/200" class="card-img-top" alt="..." height="160px">
+                <div class="col-md-3 pt-3 pt-md-0" data-aos="fade-up" data-aos-duration="10" data-aos-delay="300" data-aos-offset="250">
+                    <div class="card shadow h-100 text-center programmeCard">
+                        <img src="https://picsum.photos/200" class="card-img-top programmeCardImage" alt="...">
                         <div class="card-body  pt-0">
                             <hr>
                             <h5 class="card-title">LED Talks</h5>
@@ -166,7 +166,7 @@
                                 members can learn self-development techniques.</p>
 
                         </div>
-                        <div class="card-footer bg-white">
+                        <div class="card-footer">
                             <p class="card-text"><small class="text-body-secondary">April 14, 2023</small></p>
                         </div>
                     </div>
@@ -175,10 +175,10 @@
 
             <!-- placeholder row start  -->
             <div class="row mt-3">
-                <div class="col-md-3 ">
+                <div class="col-md-3 " data-aos="fade-up" data-aos-duration="10" data-aos-delay="0" data-aos-offset="250">
 
                     <!-- placeholder card start -->
-                    <div class="card" aria-hidden="true">
+                    <div class="card programmeCard" aria-hidden="true" >
                         <!-- <img src="..." class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title placeholder-glow">
@@ -197,10 +197,10 @@
                     <!-- placeholder card end -->
 
                 </div>
-                <div class="col-md-3 pt-3 pt-md-0">
+                <div class="col-md-3 pt-3 pt-md-0" data-aos="fade-up" data-aos-duration="10" data-aos-delay="100" data-aos-offset="250">
 
                     <!-- placeholder card start -->
-                    <div class="card" aria-hidden="true">
+                    <div class="card programmeCard" aria-hidden="true">
                         <!-- <img src="..." class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title placeholder-glow">
@@ -219,10 +219,10 @@
                     <!-- placeholder card end -->
 
                 </div>
-                <div class="col-md-3 pt-3 pt-md-0">
+                <div class="col-md-3 pt-3 pt-md-0" data-aos="fade-up" data-aos-duration="10" data-aos-delay="200" data-aos-offset="250">
 
                     <!-- placeholder card start -->
-                    <div class="card" aria-hidden="true">
+                    <div class="card programmeCard" aria-hidden="true">
                         <!-- <img src="..." class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title placeholder-glow">
@@ -241,10 +241,10 @@
                     <!-- placeholder card end -->
 
                 </div>
-                <div class="col-md-3 pt-3 pt-md-0">
+                <div class="col-md-3 pt-3 pt-md-0" data-aos="fade-up" data-aos-duration="10" data-aos-delay="300" data-aos-offset="250">
 
                     <!-- placeholder card start -->
-                    <div class="card" aria-hidden="true">
+                    <div class="card programmeCard" aria-hidden="true">
                         <!-- <img src="..." class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title placeholder-glow">
@@ -272,12 +272,11 @@
     <!-- main container End  -->
 
     <!-- Footer Start  -->
-    <div class="container-fluid mt-4 p-4" style="background: rgb(223,214,165);
-    background: linear-gradient(90deg, rgba(223,214,165,0.7) 0%, rgba(224,209,220,0.7) 100%);">
+    <div class="container-fluid mt-4 p-4 footerTheme">
         <div class="row">
 
             <!-- social media start  -->
-            <div class="col-md-4 text-center text-md-start">
+            <div class="col-md-4 text-center text-md-start" data-aos="fade-up" data-aos-duration="3" data-aos-offset="250">
                 <h5>Useful Links</h5>
                 <hr>
                 <div class="d-flex flex-row justify-content-around pt-2">
@@ -296,7 +295,7 @@
             <!-- social media end  -->
 
             <!-- contact us Start  -->
-            <div class="col-md-4 pt-4 pt-md-0 pt-lg-0 text-center text-md-start">
+            <div class="col-md-4 pt-4 pt-md-0 pt-lg-0 text-center text-md-start" data-aos="fade-up" data-aos-duration="3" data-aos-delay="300" data-aos-offset="150">
                 <h5>Contact Us</h5>
                 <hr>
                 <!-- <i class="fa-solid fa-user-plus"></i> -->
@@ -320,7 +319,7 @@
             <!-- contact us End  -->
 
             <!-- About us Start  -->
-            <div class="col-md-4 text-center text-md-start">
+            <div class="col-md-4 text-center text-md-start" data-aos="fade-up" data-aos-duration="3" data-aos-delay="500" data-aos-offset="50">
                 <h5>About Us</h5>
                 <hr>
                 <p>

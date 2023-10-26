@@ -6,18 +6,6 @@
 }
 
 
-/* nav bar color & effects  */
-.navTheme {
-    background: rgb(223, 214, 165);
-    background: linear-gradient(90deg, rgba(223, 214, 165, 0.4) 0%, rgba(224, 209, 220, 0.4) 100%);
-    backdrop-filter: blur(8px);
-}
-
-/* nav logo  */
-.logo-image {
-    height: 30px;
-    object-fit: cover;
-}
 
 /* .nav-hover:hover,
 .nav-hover:focus {

@@ -6,3 +6,25 @@
     background-position: fixed;
 
 }
+
+.programmeCard{
+    border-radius: 1em;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.programmeCard:hover,
+.programmeCard:focus{
+    transform: scale(103%);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background: rgb(223, 214, 165);
+    background: linear-gradient(0deg, rgba(223, 214, 165, 0.3) 0%, rgba(224, 209, 220, 0.3) 100%);
+}
+
+.programmeCardImage{
+    border-top-right-radius:1em ;
+    border-top-left-radius:1em ;
+    height: 10rem;
+    object-fit: cover;
+}
