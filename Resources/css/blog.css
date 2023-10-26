@@ -1,18 +1,26 @@
-.latestBlogCard{
+.latestBlogCard {
     height: 60vh;
 }
-.latestBlogCardImage{
+
+.latestBlogCardImage {
     height: 100%;
     object-fit: cover;
 }
-.previousBlogsList{
+
+.recentBlogsList {
     height: 60vh;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .latestBlogCard{
-        height: 40vh;
+    .latestBlogCard {
+        height: 50vh;
+    }
+
+    .recentBlogsList {
+        background: rgb(224, 209, 220);
+        background: linear-gradient(0deg, rgba(224, 209, 220, 0.8) 15%, rgba(223, 214, 165, 0.5) 50%, rgba(224, 209, 220, 0.8) 85%);
+
     }
 }
 

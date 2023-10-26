@@ -29,75 +29,72 @@
 </head>
 
 <body>
-    <!-- main container Start  -->
-    <div class="container-fluid p-0 ">
-
-
-        <!-- Nav Bar Start -->
-        <nav class="navbar navbar-expand-lg sticky-top" style="background: rgb(223,214,165);
+    <!-- Nav Bar Start -->
+    <nav class="navbar navbar-expand-lg sticky-top" style="background: rgb(223,214,165);
         background: linear-gradient(90deg, rgba(223,214,165,1) 0%, rgba(224,209,220,1) 100%);">
 
-            <div class="container">
-                <!-- navbrand Start  -->
-                <a class="navbar-brand" href="#">
-                    <img src="../images/logo.png" alt="Logo" class="d-inline-block align-text-top logo-image">
-                </a>
-                <!-- navbrand End  -->
+        <div class="container">
+            <!-- navbrand Start  -->
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.png" alt="Logo" class="d-inline-block align-text-top logo-image">
+            </a>
+            <!-- navbrand End  -->
 
-                <!-- navbar mobile toggler Start -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
-                    style="border: none;">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- navbar mobile toggler END -->
+            <!-- navbar mobile toggler Start -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="border: none;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar mobile toggler END -->
 
-                <div class="offcanvas offcanvas-lg offcanvas-start fw-semibold fs-6 navTheme" tabindex="-1"
-                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <img src="../images/logo.png" alt="Logo" class="d-inline-block align-text-top">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body d-flex flex-column ">
-                        <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 gap-3">
-                            <li class="nav-item">
-                                <a class="nav-link nav-hover" aria-current="page" href="/index.html"> Home </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-hover" href="ourProgrammes.html">Our Programmes </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link nav-hover" href="#">News and Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-hover" href="#">Magazine</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#" style="border-bottom: 0.15em solid transparent;">
-                                    Blog <span class="align-top"><i class="fa-solid fa-circle fa-2xs"
-                                            style="color: #3fa338;"></i></span></a>
-                            </li>
-                        </ul>
+            <div class="offcanvas offcanvas-lg offcanvas-start fw-semibold fs-6 navTheme" tabindex="-1"
+                id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <img src="../images/logo.png" alt="Logo" class="d-inline-block align-text-top">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column ">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link nav-hover" aria-current="page" href="/index.html"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-hover" href="ourProgrammes.html">Our Programmes </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link nav-hover" href="#">News and Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-hover" href="#">Magazine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" style="border-bottom: 0.15em solid transparent;">
+                                Blog <span class="align-top"><i class="fa-solid fa-circle fa-2xs"
+                                        style="color: #3fa338;"></i></span></a>
+                        </li>
+                    </ul>
 
-                    </div>
                 </div>
             </div>
-        </nav>
-        <!-- Nav Bar END  -->
+        </div>
+    </nav>
+    <!-- Nav Bar END  -->
+    <!-- main container Start  -->
+    <div class="container-fluid">
 
         <div class="container mt-3">
             <div class="row">
 
-                <!-- Previous blog cards list start -->
-                <div class="col-md-4 overflow-auto order-last order-md-first previousBlogsList">
-                    <!-- previous text header  -->
-                    <h3 class="fw-medium my-4 mt-md-4 text-center text-md-start d-none d-md-block">Previous</h3>
-
+                <!-- Recent blog cards list start -->
+                <div class="col-md-4 overflow-auto order-last order-md-first recentBlogsList py-3 py-md-0">
+                    <!-- Recent text header  -->
+                    <h3 class="fw-medium my-4 mt-md-4 text-center text-md-start d-none d-md-block">Recent</h3>
+                    <hr class=" d-none d-md-block">
                     <div class="row ">
 
                         <div class="col-md-12">
                             <!-- card start  -->
-                            <div class="card shadow">
+                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
                                 <div class="row ">
                                     <div class="col-4 col-md-4 pe-0">
                                         <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
@@ -122,7 +119,7 @@
                         <div class="col-md-12">
 
                             <!-- card start  -->
-                            <div class="card shadow">
+                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
                                 <div class="row">
                                     <div class="col-4 col-md-4 pe-0">
                                         <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
@@ -147,7 +144,7 @@
                         <div class="col-md-12">
 
                             <!-- card start  -->
-                            <div class="card shadow">
+                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
                                 <div class="row">
                                     <div class="col-4 col-md-4 pe-0">
                                         <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
@@ -172,7 +169,7 @@
                         <div class="col-md-12">
 
                             <!-- card start  -->
-                            <div class="card shadow" data-aos="fade-up">
+                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
                                 <div class="row">
                                     <div class="col-4 col-md-4 pe-0">
                                         <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
@@ -197,7 +194,7 @@
                         <div class="col-md-12">
 
                             <!-- card start  -->
-                            <div class="card shadow">
+                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
                                 <div class="row">
                                     <div class="col-4 col-md-4 pe-0">
                                         <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
@@ -222,7 +219,7 @@
                         <div class="col-md-12">
 
                             <!-- card start  -->
-                            <div class="card shadow">
+                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
                                 <div class="row">
                                     <div class="col-4 col-md-4 pe-0">
                                         <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
@@ -247,7 +244,7 @@
                         <div class="col-md-12">
 
                             <!-- card start  -->
-                            <div class="card shadow">
+                            <div class="card shadow" data-aos="fade-up" data-aos-duration="5">
                                 <div class="row">
                                     <div class="col-4 col-md-4 pe-0">
                                         <img src="https://picsum.photos/200" class="img-fluid rounded-start h-100"
@@ -269,20 +266,111 @@
                         </div>
                     </div>
                 </div>
-                <!-- Previous blog cards list end -->
+                <!-- Recent blog cards list end -->
 
                 <!-- Latest Blog card section start  -->
                 <div class="col-md-8 order-first order-md-last">
 
                     <!-- Latest header text  -->
-                    <h1 class="text-center text-md-start">Latest</h1>
-
+                    <h1 class="text-center text-md-start py-2">Latest</h1>
+                    <hr>
                     <div class="position-sticky">
 
+                        <div id="carouselExampleCaptions" class="carousel slide shadow" data-bs-ride="carousel">
+                            <!-- Carousel indicator Start  -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <!-- Carousel indicator End  -->
+                            <!-- carousel items Start  -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div
+                                        class="card shadow text-bg-dark border border-0 latestBlogCard mb-2 m-md-0 shadow-lg">
+                                        <img src="https://picsum.photos/200" class="card-img latestBlogCardImage"
+                                            alt="...">
+                                        <div
+                                            class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center carousel-caption">
+                                            <h5 class="card-title display-5">Card title</h5>
+                                            <p class="card-text lead">This is a wider card with supporting text below as
+                                                a natural
+                                                lead-in to
+                                                additional content. This content is a little bit longer.</p>
+
+                                            <!-- link blog page here -->
+                                            <a href="#" class="stretched-link"></a>
+
+                                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="card shadow text-bg-dark border border-0 latestBlogCard mb-2 m-md-0 shadow-lg">
+                                        <img src="https://picsum.photos/200" class="card-img latestBlogCardImage"
+                                            alt="...">
+                                        <div
+                                            class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center carousel-caption">
+                                            <h5 class="card-title display-5">Card title</h5>
+                                            <p class="card-text lead">This is a wider card with supporting text below as
+                                                a natural
+                                                lead-in to
+                                                additional content. This content is a little bit longer.</p>
+
+                                            <!-- link blog page here -->
+                                            <a href="#" class="stretched-link"></a>
+
+                                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="card shadow text-bg-dark border border-0 latestBlogCard mb-2 m-md-0 shadow-lg">
+                                        <img src="https://picsum.photos/200" class="card-img latestBlogCardImage"
+                                            alt="...">
+                                        <div
+                                            class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center carousel-caption">
+                                            <h5 class="card-title display-5">Card title</h5>
+                                            <p class="card-text lead">This is a wider card with supporting text below as
+                                                a natural
+                                                lead-in to
+                                                additional content. This content is a little bit longer.</p>
+
+                                            <!-- link blog page here -->
+                                            <a href="#" class="stretched-link"></a>
+
+                                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- carousel items END  -->
+
+                            <!-- Previous and next buttons Start  -->
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <!-- Previous and next buttons End  -->
+                        </div>
                         <!-- latest blog card start  -->
-                        <div class="card shadow text-bg-dark border border-0 latestBlogCard mb-2 m-md-0 shadow-lg">
+                        <div
+                            class="card shadow text-bg-dark border border-0 latestBlogCard mb-2 m-md-0 shadow-lg d-none">
                             <img src="https://picsum.photos/200" class="card-img latestBlogCardImage" alt="...">
-                            <div class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center">
+                            <div
+                                class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center">
                                 <h5 class="card-title display-5">Card title</h5>
                                 <p class="card-text lead">This is a wider card with supporting text below as a natural
                                     lead-in to
@@ -302,90 +390,91 @@
                 <!-- Latest Blog card section end  -->
                 <div class="row d-block d-md-none">
                     <div class="col">
-                    <h3 class="fw-medium my-4 mt-md-4 text-center text-md-start">Previous</h3>
+                        <hr>
+                        <h3 class="fw-medium my-4 mt-md-4 text-center text-md-start">Recent</h3>
+                        <hr>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <!-- Footer Start  -->
-        <div class="container-fluid mt-4 p-4" style="background: rgb(223,214,165);
-        background: linear-gradient(90deg, rgba(223,214,165,0.7) 0%, rgba(224,209,220,0.7) 100%);">
-            <div class="row">
-
-                <!-- social media start  -->
-                <div class="col-md-4 text-center text-md-start">
-                    <h5>Useful Links</h5>
-                    <hr>
-                    <div class="d-flex flex-row justify-content-around pt-2">
-
-                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></div>
-                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></div>
-                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-tiktok fa-2xl"></i></a></div>
-                        <div class="p-1 socialLinks"><a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a></div>
-                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a></div>
-                        <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a></div>
-                        <div class="p-1 socialLinks"><a href="#"><i
-                                    class="fa-brands fa-square-x-twitter fa-2xl"></i></a></div>
-                    </div>
-
-                </div>
-                <!-- social media end  -->
-
-                <!-- contact us Start  -->
-                <div class="col-md-4 pt-4 pt-md-0 pt-lg-0 text-center text-md-start">
-                    <h5>Contact Us</h5>
-                    <hr>
-                    <!-- <i class="fa-solid fa-user-plus"></i> -->
-                    <h6><i class="fa-solid fa-location-dot"></i> Address:</h6>
-                    <p>
-                        University of Kelaniya, <br>
-                        Kandy Road, Dalugama,<br>
-                        Kelaniya,11600,<br>
-                        Sri Lanka.
-                    </p>
-
-                    <h6><i class="fa-solid fa-phone"></i> Phone:</h6>
-
-                    <p>
-                        <i class="fa-regular fa-circle-dot fa-2xs"></i> Hansi (Secretory) - +94 77 129 2711 <br>
-                        <i class="fa-regular fa-circle-dot fa-2xs"></i> Ishara (HR Director) +94 77 183 3696 <br>
-                        <i class="fa-regular fa-circle-dot fa-2xs"></i> Dewduni (HR Manager) +94 77 447 5759 <br>
-                    </p>
-
-                </div>
-                <!-- contact us End  -->
-
-                <!-- About us Start  -->
-                <div class="col-md-4 text-center text-md-start">
-                    <h5>About Us</h5>
-                    <hr>
-                    <p>
-                        Non-profit organization and the initiative of a group of undergraduates studying in various
-                        fields,
-                        including Science, information technology, management, and social sciences at the University of
-                        Kelaniya.
-                    </p>
-                </div>
-                <!-- About us End  -->
-            </div>
-
-        </div>
-        <!-- Footer END  -->
-
-        <!-- Copyright text Start -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 fw-medium bg-dark text-center text-light">
-                    Copyrights © 2023 Achinthya Dulshan
-                </div>
-            </div>
-        </div>
-        <!-- Copyright text End -->
 
     </div>
     <!-- main container End  -->
+
+    <!-- Footer Start  -->
+    <div class="container-fluid mt-4 p-4" style="background: rgb(223,214,165);
+    background: linear-gradient(90deg, rgba(223,214,165,0.7) 0%, rgba(224,209,220,0.7) 100%);">
+        <div class="row">
+
+            <!-- social media start  -->
+            <div class="col-md-4 text-center text-md-start">
+                <h5>Useful Links</h5>
+                <hr>
+                <div class="d-flex flex-row justify-content-around pt-2">
+
+                    <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></div>
+                    <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></div>
+                    <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-tiktok fa-2xl"></i></a></div>
+                    <div class="p-1 socialLinks"><a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a></div>
+                    <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a></div>
+                    <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a></div>
+                    <div class="p-1 socialLinks"><a href="#"><i class="fa-brands fa-square-x-twitter fa-2xl"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- social media end  -->
+
+            <!-- contact us Start  -->
+            <div class="col-md-4 pt-4 pt-md-0 pt-lg-0 text-center text-md-start">
+                <h5>Contact Us</h5>
+                <hr>
+                <!-- <i class="fa-solid fa-user-plus"></i> -->
+                <h6><i class="fa-solid fa-location-dot"></i> Address:</h6>
+                <p>
+                    University of Kelaniya, <br>
+                    Kandy Road, Dalugama,<br>
+                    Kelaniya,11600,<br>
+                    Sri Lanka.
+                </p>
+
+                <h6><i class="fa-solid fa-phone"></i> Phone:</h6>
+
+                <p>
+                    <i class="fa-regular fa-circle-dot fa-2xs"></i> Hansi (Secretory) - +94 77 129 2711 <br>
+                    <i class="fa-regular fa-circle-dot fa-2xs"></i> Ishara (HR Director) +94 77 183 3696 <br>
+                    <i class="fa-regular fa-circle-dot fa-2xs"></i> Dewduni (HR Manager) +94 77 447 5759 <br>
+                </p>
+
+            </div>
+            <!-- contact us End  -->
+
+            <!-- About us Start  -->
+            <div class="col-md-4 text-center text-md-start">
+                <h5>About Us</h5>
+                <hr>
+                <p>
+                    Non-profit organization and the initiative of a group of undergraduates studying in various
+                    fields,
+                    including Science, information technology, management, and social sciences at the University of
+                    Kelaniya.
+                </p>
+            </div>
+            <!-- About us End  -->
+        </div>
+
+    </div>
+    <!-- Footer END  -->
+
+    <!-- Copyright text Start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 fw-medium bg-dark text-center text-light">
+                Copyrights © 2023 Achinthya Dulshan
+            </div>
+        </div>
+    </div>
+    <!-- Copyright text End -->
 </body>
 
 

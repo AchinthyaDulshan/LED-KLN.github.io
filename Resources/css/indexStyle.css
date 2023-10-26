@@ -32,7 +32,7 @@
 
 
 /* carousel */
-.carousel-item {
+.c-item {
     height: 85vh;
 }
 
@@ -100,7 +100,7 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .carousel-item {
+    .c-item {
         height: 55vh;
     }
 }
