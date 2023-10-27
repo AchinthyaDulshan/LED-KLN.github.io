@@ -7,18 +7,6 @@
 
 
 
-/* .nav-hover:hover,
-.nav-hover:focus {
-    border-bottom-color: black;
-    transition-duration: 0.3s;
-}
-
-.nav-hover{
-    border-bottom: 0.15em solid transparent;    
-    transition-duration: 0.3s;
-} */
-
-
 /* carousel */
 .c-item {
     height: 85vh;
