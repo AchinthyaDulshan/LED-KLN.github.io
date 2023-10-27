@@ -56,21 +56,6 @@
 
 }
 
-/* social media links on footer  */
-.socialLinks {
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-
-.socialLinks:hover,
-.socialLinks:focus {
-    transform: scale(1.2);
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-
-}
-
-
 
 
 
